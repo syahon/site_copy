@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image-sp {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 20px 25px;
+}
+
+.header-logo {
+  display: block;
+  width: 185px;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.header-site-menu {
+  text-align: center;
+}
+
+.header-site-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.header-site-menu ul li {
+  margin: 0 20px;
+}
+
+.list-item b {
+  font-size: 14px;
+  display: block;
+}
+
+.list-item span {
+  font-size: 10px;
+  display: block;
+}
+
+.header-site-menu li:last-child {
+  background-color: #f79214;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+
+.header-site-menu li:last-child span {
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.header-site-menu li:last-child:hover {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+.first-view {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.first-view-inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1140px;
+}
+
+.first-view-inner h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  line-height: 54px;
+  display: inline-block;
+}
+
+.image-zone {
+  display: block;
+  margin-top: 10px;
+}
+
+.image-zone img {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.image-zone img:nth-child(2) {
+  width: 200px;
+}
+
+.first-view-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.first-view-link a {
+  margin-right: 10px;
+}
+
+.first-view-link a:hover {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+.first-view-link a:first-child {
+  background-color: #f79214;
+  color: #fff;
+  padding: 18px 50px;
+  border-radius: 40px;
+}
+
+.first-view-link a:last-child {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 18px 24px;
+  border-radius: 40px;
+  color: #000;
+}
+
+.attention-text {
+  margin-top: 72px;
+}
+
+.attention-text p {
+  color: #a2a2a4;
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.attention-text p a {
+  color: #a2a2a4;
+}
+
+.about {
+  background-color: #f79214;
+  padding: 45px 50px;
+}
+
+.about-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video {
+  width: 50%;
+}
+
+.about-text {
+  margin-left: 30px;
+}
+
+.about-text {
+  color: #fff;
+}
+
+.about-text h2 {
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.about-text a {
+  color: #fff;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.about-text a img {
+  padding-right: 6px;
+}
+
+
+@media (max-width: 1080px) {
+  .header-site-menu {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+    height: 60px;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+  .header-inner {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    margin: 10px 35px;
+  }
+  
+  .hamburger-menu div {
+    background-color: #000;
+    height: 3px;
+    margin-top: 7px;
+    border-radius: 10px;
+  }
+
+  .header-logo {
+    width: 185px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  @media (max-width: 1024px) {
+    .about-inner {
+      flex-direction: column;
+    }
+  
+    video {
+      width: 75%;
+    }
+  
+    .about-text {
+      width: 75%;
+      margin-left: 0;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 767px) {
+      .header {
+        height: 50px;
+      }
+
+      .header-inner {
+        display: flex;
+      }
+
+      .header-logo {
+        width: 150px;
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .hamburger-menu {
+        margin: 5px 15px;
+      }
+
+      main {
+        padding-top: 50px;
+      }
+
+      .first-view {
+        background-image: none;
+        padding-top: 0;
+      }
+
+      .image-sp {
+        display: block;
+      }
+
+      .first-view-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .first-view-inner h2 {
+        font-size: 25px;
+        line-height: 1.5;
+      }
+
+      .image-zone {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .image-zone img {
+        width: 27.5%;
+        margin-right: 0;
+      }
+
+      .image-zone img:nth-child(2) {
+        width: 40%;
+      }
+
+      .first-view-link {
+        width: 100%;
+      }
+
+      .first-view-link a {
+        margin-right: 0;
+      }
+
+      .first-view-link a:first-child {
+        width: 100%;
+      }
+
+      .first-view-link a:last-child {
+        display: none;
+      }
+
+      .attention-text {
+        margin-top: 20px;
+      }
+
+      .about {
+        padding: 30px 0;
+      }
+
+      video {
+        width: 94%;
+      }
+
+      .about-text {
+        width: 94%;
+      }
+    }
+  }
+}
